@@ -1,0 +1,143 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+.slick-track {
+    display: flex !important;
+}
+
+.slick-slide {
+    height: auto !important;
+}
+
+
+/* Arrows */
+.slick-arrow {
+    position: absolute;
+    top: 50%;
+    box-sizing: border-box;
+    width: 33px;
+    height: 76px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background-image: url('../images/icons/arrow-desk.svg');
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size:cover;
+    background-color:transparent;
+    z-index: 3;
+    
+}
+
+.slick-prev {
+    left: 250px;
+}
+
+.slick-next {
+    background-image: url('../images/icons/arrow-next-desk.svg');
+    right: 250px;
+}
+
+
+
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    /* margin-bottom: 30px; */
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: 22px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-size: 30px;
+    line-height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    content: '•';
+    text-align: center;
+    color: #FFFFFF;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    font-size: 50px;
+    color: #23C1C1;
+}

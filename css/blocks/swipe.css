@@ -1,0 +1,127 @@
+/**
+ * Swipe
+ */
+.swipe {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    z-index: 50;
+    width: 100%;
+    transform: translateY(-100%);
+    transition: transform 0.4s ease;
+    overflow-y: auto;
+    background-color: #fff;
+}
+
+.swipe--opened {
+    transform: translateY(0);
+}
+
+.swipe__inner {
+    padding-bottom: var(--swipe-offset);
+    padding-top: var(--swipe-offset);
+}
+
+.swipe__actions {
+    display: flex;
+    flex-direction: column;
+}
+
+.swipe__actions .btn:not(:last-child) {
+    margin-bottom: var(--btn-offset);
+}
+
+.swipe__nav .nav__item:not(:last-child) {
+    margin-bottom: var(--swipe-nav-offset);
+}
+
+.swipe__nav .nav__link {
+    color: #5C5E60;
+    font-weight: 400;
+}
+
+.swipe__nav .nav__t {
+    line-height: 1;
+}
+
+.swipe__nav .nav__t .nav__link {
+    color: #252525;
+    font-size: inherit;
+}
+
+.swipe__nav .nav__link:hover:not(.nav__link--active) {
+    color: #C67804;
+}
+
+.swipe__nav .nav__link--active {
+    color: #1c1c1c;
+}
+
+@media (max-width: 991px) {
+    .swipe {
+        --swipe-offset: 40px;
+        --btn-offset: 8px;
+        --swipe-nav-offset: 12px;
+        --swipe-t-offset: 20px;
+    }
+}
+
+@media (max-width: 767px) {
+    .swipe {
+        --header-height: 60px;
+    }
+
+    .swipe__actions {
+        margin: 40px 0;
+    }
+
+    .swipe__nav {
+        padding: 24px 0;
+    }
+
+    .swipe__nav:first-child {
+        padding-top: 0;
+    }
+
+    .swipe__nav:last-child {
+        padding-bottom: 0;
+    }
+
+    .swipe__nav:not(:first-child) {
+        border-top: 1px solid #EDE6E0;
+    }
+}
+
+@media (max-width: 575px) {
+    .swipe__actions {
+        width: 100%;
+    }
+}
+
+@media (min-width: 768px) {
+    .swipe {
+        --header-height: 69px;
+    }
+
+    .swipe__nav .nav__t {
+        margin-bottom: var(--swipe-t-offset);
+    }
+}
+
+@media (min-width: 992px) {
+    .swipe {
+        --header-height: 80px;
+        --swipe-offset: 60px;
+        --btn-offset: 12px;
+        --swipe-nav-offset: 20px;
+        --swipe-t-offset: 24px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .swipe {
+        --header-height: 90px;
+        --btn-offset: 16px;
+    }
+}
