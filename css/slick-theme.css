@@ -141,3 +141,30 @@
     font-size: 50px;
     color: #23C1C1;
 }
+
+@media (max-width:768px) {
+
+    .slick-arrow {
+        width: 20px;
+        height: 60px;
+    }
+
+    .slick-next {
+        right: 20px;
+        background-image: url('../images/icons/arrow-mob-right.svg');
+
+    }
+
+    .slick-prev {
+        left: 20px;
+        background-image: url('../images/icons/arrow-mob-left.svg');
+    }
+    
+}
+
+@media (max-width:576px) {
+    .slick-arrow {
+        width: 10px;
+        height: 30px;
+    }
+}

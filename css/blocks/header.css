@@ -150,7 +150,7 @@
 
 
 .feedback__btn {
-    display: inline-flex;
+    display: block;
     font-weight: 600;
     font-size: 11.554px;
     line-height: 118%;
@@ -159,10 +159,12 @@
     color: #FFFFFF;
     background: linear-gradient(275.14deg, #489B9B 15.67%, #23C1C1 93.4%);
     border-radius: 51px;
-    padding: 7px 16px 7px 39px;
+    width: 191px;
+    padding: 7px 0 7px 11px;
     position: relative;
-    max-height: 28px;
+    
     margin-left: auto;
+    text-align: center;
 }
 
 .feedback__btn::before {
@@ -173,8 +175,28 @@
     top: 5px;
     left: 12px;
     background-image: url('../../images/icons/phone-icon.svg');
+    background-repeat: no-repeat;
+    background-position: center;
 
 }
+
+
+@media (max-width:768px){ 
+    .feedback__btn {
+        width: 160px;
+        padding: 7px 15px 7px 57px;
+        max-height: 48px;
+        text-align: left;
+    }
+
+    .feedback__btn::before {
+        width: 26px;
+        height: 26px;
+        top: 9px;
+        left: 24px;
+    }
+}
+
 
 @media (max-width:576px){
 

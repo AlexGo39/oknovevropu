@@ -191,6 +191,7 @@ textarea.form__input:focus{
     font-size: 14px;
     line-height: 17px;
     color: #FFFFFF;
+    white-space: nowrap;
 }
 
 .footer__bottom--phones a:last-child{
@@ -200,6 +201,8 @@ textarea.form__input:focus{
 /**
  * Socials
  */
+
+ 
 
  .footer__bottom--socials .socials__link {
      display: flex;
@@ -213,6 +216,74 @@ textarea.form__input:focus{
  .socials__list .socials__item:not(:last-child){
      margin-right: 15px;
  }
+
+ @media (max-width: 768px) {
+     .footer__inner.container {
+         padding-left: 128px;
+         padding-right: 128px;
+     }
+
+    .footer__title {
+        font-size: 46px;
+        line-height: 46px;
+        padding-bottom: 27px;
+    }
+
+    
+
+    .footer__bottom--contacts {
+        flex-direction: column !important;
+        align-items: flex-end !important;
+    }
+ }
+
+ @media (max-width: 575px) {
+    .footer__bottom--contacts {
+        align-items: center !important;
+ }
+
+ .footer__inner.container {
+    padding-left: 24px;
+    padding-right: 24px;
+}
+
+.footer__title {
+    font-size: 23px;
+    line-height: 23px;
+}
+.footer__phones a {
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.footer__phones a::before {
+    display: none;
+}
+.footer__phones {
+    position: relative;
+}
+
+.footer__phones::before {
+    content: "";
+    position: absolute;
+    background-color: #fff;
+    background-image: url('/../images/icons/phone-icon-footer.svg');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    top: 3.5px;
+    left: 25%;
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+}
+
+.footer__text {
+    font-size: 12px;
+    line-height: 15px;
+}
+
+ }
+
 
 
 
