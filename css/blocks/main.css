@@ -509,7 +509,7 @@ ul li {
  */
 
  .tourism__section {
-    background-image: url('/../images/photos/bg.jpg');
+    background-image: url('../../images/photos/bg.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     padding-top: 84px;

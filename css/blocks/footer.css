@@ -217,6 +217,10 @@ textarea.form__input:focus{
      margin-right: 15px;
  }
 
+ .footer__bottom--socials {
+     margin-left: 33px;
+ }
+
  @media (max-width: 768px) {
      .footer__inner.container {
          padding-left: 128px;
@@ -227,6 +231,10 @@ textarea.form__input:focus{
         font-size: 46px;
         line-height: 46px;
         padding-bottom: 27px;
+    }
+
+    .footer__bottom--socials {
+        margin-left: 0px;
     }
 
     
@@ -267,7 +275,7 @@ textarea.form__input:focus{
     content: "";
     position: absolute;
     background-color: #fff;
-    background-image: url('/../images/icons/phone-icon-footer.svg');
+    background-image: url('../../images/icons/phone-icon-footer.svg');
     background-repeat: no-repeat;
     background-position: 50% 50%;
     top: 3.5px;
